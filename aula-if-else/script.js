@@ -1,10 +1,17 @@
 alert("Verificador de idade!")
 
+const anoAtual = prompt("Em que ano estamos?")
+
 const anoDeNascimento = prompt("Digite seu ano de nascimento: ")
 
-const idade = 2026 - parseFloat(anoDeNascimento)
+const idade = parseFloat(anoAtual) - parseFloat(anoDeNascimento)
 
-if (idade >= 18) {
+if (idade >= 21) {
+    alert(
+        "Você tem " + idade + " anos de idade!" +
+        "\nVocê já é um adulto!"
+    )
+} else if (idade >= 18 && idade < 21) {
     alert(
         "Você tem " + idade + " anos de idade!" +
         "\nVocê já é de maior!"
