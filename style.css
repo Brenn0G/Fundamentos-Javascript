@@ -99,6 +99,7 @@ li {
 .fn  { color: #88c0d0; }
 .str { color: #a3be8c; }
 .cm  { color: #444; font-style: italic; }
+.cond { color: #9b917b;}
 
 a {
     color: #ddd;

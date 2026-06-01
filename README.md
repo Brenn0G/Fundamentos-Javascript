@@ -8,9 +8,14 @@ Este repositório é dedicado à prática e estudo de JavaScript, com o objetivo
 - `style.css`: Arquivo de estilos CSS principal.
 - `script.js`: Arquivo principal JavaScript.
 - `exercicio-1/`: Pasta contendo um exercício específico.
-  - `index.html`: Página HTML do exercício 1.
-  - `style.css`: Estilos CSS do exercício.
-  - `script.js`: Código JavaScript do exercício.
+  - `exercicio-1.1/`: Subpasta do exercício 1.
+    - `index.html`: Página HTML do exercício 1.1.
+    - `style.css`: Estilos CSS do exercício 1.1.
+    - `script.js`: Código JavaScript do exercício 1.1.
+  - `exercicio-1.2/`: Subpasta do exercício 1.
+    - `index.html`: Página HTML do exercício 1.2.
+    - `style.css`: Estilos CSS do exercício 1.2.
+    - `script.js`: Código JavaScript do exercício 1.2.
 
 ## Tecnologias Utilizadas
 
