@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página da aula sobre os conceitos principais sobre SWITCH">
+    <title>Aula - SWITCH</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <p id="logo-p">JS<span id="logo-min">JavaScript</span></p>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="hero-title">
+            <h1>Estruturas Condicionais - SWITCH</h1>
+        </div>
+
+        <div>
+            <h2>Conteúdo</h2>
+            <p>
+                A estrutura condicional SWITCH é utilizada quando precisamos
+                comparar uma mesma variável com diferentes valores possíveis.
+            </p>
+            <p>
+                Ela pode tornar o código mais organizado e legível quando existem
+                várias condições relacionadas ao mesmo valor.
+            </p>
+            <br>
+            <p>
+                "SE o valor for X faça uma coisa, SE for Y faça outra, SE for Z faça outra..."
+            </p>
+        </div>
+
+        <div>
+            <h2>Sintaxe:</h2>
+            <pre class="code-preview">
+switch (variavel) {
+    case valor1:
+        // código a ser executado
+        break;
+
+    case valor2:
+        // código a ser executado
+        break;
+
+    case valor3:
+        // código a ser executado
+        break;
+
+    default:
+        // código executado caso nenhum valor corresponda
+}
+            </pre>
+        </div>
+
+        <div>
+            <h2>Exemplo:</h2>
+            <pre class="code-preview">
+const opcao = "Ataque"
+
+switch (opcao) {
+    case "Ataque":
+        console.log("Você escolheu atacar!")
+        break
+
+    case "Defesa":
+        console.log("Você escolheu defender!")
+        break
+
+    case "Fugir":
+        console.log("Você fugiu da batalha!")
+        break
+
+    default:
+        console.log("Opção inválida!")
+}
+            </pre>
+        </div>
+
+        <div>
+            <h2>Importância do BREAK</h2>
+            <p>
+                O comando <strong>break</strong> encerra a execução do SWITCH.
+            </p>
+            <p>
+                Sem ele, o JavaScript continuará executando os próximos cases,
+                mesmo que uma condição já tenha sido satisfeita.
+            </p>
+        </div>
+
+        <div>
+            <h2>DEFAULT</h2>
+            <p>
+                O bloco <strong>default</strong> funciona de forma semelhante ao
+                <strong>else</strong> de uma estrutura IF/ELSE.
+            </p>
+            <p>
+                Ele será executado quando nenhum dos casos definidos for atendido.
+            </p>
+        </div>
+
+        <div class="hero-links">
+            <h2>Navegação:</h2>
+            <ul>
+                <li><a href="../index.html">Voltar</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-p">&copy; BG - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
