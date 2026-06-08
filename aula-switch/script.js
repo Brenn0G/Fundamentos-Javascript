@@ -46,7 +46,7 @@ switch (diaDaSemana) {
         alert("Opção Invalida!")
 }
 
-if (1 <= diaDaSemana <= 7 && 1 <= dia <= 31 && 1 <= mes <= 12 && ano <= 2026) {
+if (diaDaSemana <= 1 && diaDaSemana <= 7 && dia >= 1 && dia <= 31 && mes >= 1 && mes <= 12 && ano <= 2026) {
     alert(
         "Data de hoje: " + dia + "/" + mes + "/" + ano +
         "\n" +
