@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página da aula sobre os conceitos principais sobre WHILE">
+    <title>Aula - WHILE</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <p id="logo-p">JS<span id="logo-min">JavaScript</span></p>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="hero-title">
+            <h1>Estruturas de Repetição - WHILE</h1>
+        </div>
+
+        <div>
+            <h2>Conteúdo</h2>
+
+            <p>
+                A estrutura de repetição <strong>WHILE</strong> é utilizada para
+                executar um bloco de código várias vezes enquanto uma condição
+                permanecer verdadeira.
+            </p>
+
+            <p>
+                Antes de cada repetição, o JavaScript verifica a condição.
+                Se ela for verdadeira, o bloco será executado novamente.
+            </p>
+
+            <br>
+
+            <p>
+                "ENQUANTO a condição for verdadeira, execute o código."
+            </p>
+        </div>
+
+        <div>
+            <h2>Sintaxe:</h2>
+
+            <pre class="code-preview">
+while (condicao) {
+    // código que será repetido
+}
+            </pre>
+        </div>
+
+        <div>
+            <h2>Exemplo:</h2>
+
+            <pre class="code-preview">
+let contador = 1
+
+while (contador <= 5) {
+    console.log(contador)
+    contador++
+}
+            </pre>
+
+            <p>
+                Neste exemplo, os números de 1 a 5 serão exibidos no console.
+            </p>
+        </div>
+
+        <div>
+            <h2>Fluxo de Execução</h2>
+
+            <p>
+                O funcionamento do WHILE segue os seguintes passos:
+            </p>
+
+            <ul>
+                <li>Verifica a condição.</li>
+                <li>Se for verdadeira, executa o bloco de código.</li>
+                <li>Retorna para a condição.</li>
+                <li>Repete o processo até a condição ser falsa.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Cuidado com Loops Infinitos</h2>
+
+            <p>
+                Um erro comum ao utilizar o WHILE é esquecer de alterar a
+                variável de controle.
+            </p>
+
+            <p>
+                Isso faz com que a condição nunca se torne falsa, criando um
+                loop infinito.
+            </p>
+
+            <pre class="code-preview">
+let contador = 1
+
+while (contador <= 5) {
+    console.log(contador)
+}
+            </pre>
+
+            <p>
+                Neste exemplo, o valor de <strong>contador</strong> nunca é alterado,
+                então o loop nunca termina.
+            </p>
+        </div>
+
+        <div>
+            <h2>Exemplo Prático</h2>
+
+            <pre class="code-preview">
+let senha = ""
+
+while (senha !== "1234") {
+    senha = prompt("Digite a senha:")
+}
+
+alert("Acesso liberado!")
+            </pre>
+
+            <p>
+                O programa continuará solicitando a senha até que o usuário
+                digite o valor correto.
+            </p>
+        </div>
+
+        <div class="hero-links">
+            <h2>Navegação:</h2>
+            <ul>
+                <li><a href="../index.html">Voltar</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-p">&copy; BG - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
