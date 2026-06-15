@@ -7,11 +7,11 @@ let saldo = 10000;
 let usuario = "";
 let senha = "";
 
-while (usuario !== usuarioAdmin && senha !== senhaAdmin) {
+while (usuario !== usuarioAdmin || senha !== senhaAdmin) {
   usuario = prompt("Digite seu Usuário: ");
   senha = prompt("Digite sua senha: ");
 
-  if (usuario !== usuarioAdmin && senha !== senhaAdmin) {
+  if (usuario !== usuarioAdmin || senha !== senhaAdmin) {
     alert("Usuário ou senha incorretos!");
   }
 }
